@@ -1,0 +1,13 @@
+.navbar-nav-right {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+  
+  .navbar-nav-right .nav-link {
+    margin-left: 10px; /* Adjust spacing between items if needed */
+  }
+
+.Container{
+    color: brown;
+  }
