@@ -1,9 +1,9 @@
 import express from "express";
 import bodyParser from "body-parser";
-import connectDB from "./config/db.js";
-import patientRoutes from "./routes/patientRoutes.js";
-import doctorRoutes from "./routes/doctorRoutes.js";
-import appointmentRoutes from "./routes/appointmentRoutes.js";
+import connectDB from "./backend/config/db.js";
+import patientRoutes from "./backend/routes/patientRoutes.js";
+import doctorRoutes from "./backend/routes/doctorRoutes.js";
+import appointmentRoutes from "./backend/routes/appointmentRoutes.js";
 import cors from "cors"; 
 
 const app = express();
@@ -15,7 +15,6 @@ app.use(cors());
 
 connectDB();
 
-//app.get("/", (req, res) => res.send("Hello world"));
 app.use("/api/patients", patientRoutes);
 app.use("/api/doctors", doctorRoutes);
 app.use("/api/appointments", appointmentRoutes);
