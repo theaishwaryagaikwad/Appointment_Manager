@@ -1,6 +1,5 @@
 import express from "express";
 import { 
-    homepage,
     addAppointment, 
     getAllAppointments, 
     getAppointmentByPatientId, 
@@ -12,7 +11,6 @@ import {
 
 const router = express.Router();
 
-router.get("/", homepage);
 router.post('/appointments/appointment', addAppointment);
 router.get('/appointment/allAppointments', getAllAppointments);
 router.get('/appointmentsByPatientId/:patientId', getAppointmentByPatientId);
