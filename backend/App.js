@@ -7,7 +7,7 @@ import appointmentRoutes from "./routes/appointmentRoutes.js";
 import cors from "cors"; 
 
 const app = express();
-const PORT = 3000;
+const PORT = 5006;
 
 app.use(express.json());
 app.use(bodyParser.json());
