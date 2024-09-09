@@ -16,7 +16,6 @@ app.use(cors());
 connectDB();
 
 //app.get("/", (req, res) => res.send("Hello world"));
-app.get("/", appointmentRoutes);
 app.use("/api/patients", patientRoutes);
 app.use("/api/doctors", doctorRoutes);
 app.use("/api/appointments", appointmentRoutes);
