@@ -1,13 +1,5 @@
 import Appointment from "../models/appointmentModels.js";
 
-export async function homepage(req,res) {
-  try {
-    res.status(200).send("Welcome to the Appointment Management API");
-  } catch (error) {
-    res.status(500).json({ message: "Server Error", error: error.message });
-  }
-}
-
 export async function addAppointment(req, res) {
   try {
     console.log("Request Body: ", req.body);
